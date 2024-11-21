@@ -36,4 +36,10 @@ where attendee_id = 1;
 
 DELETE from attendees  where attendee_id=1;
 
+-- venue :
 
+select * from venues where venue_id =1;
+
+insert into venues (venue_name, location) values ('stocking', 'takeo');
+
+update venues set venue_name='koko', location='bobo' where venue_id=34
