@@ -42,4 +42,27 @@ select * from venues where venue_id =1;
 
 insert into venues (venue_name, location) values ('stocking', 'takeo');
 
-update venues set venue_name='koko', location='bobo' where venue_id=34
+update venues set venue_name='koko', location='bobo' where venue_id=34;
+
+
+
+-- retrieve all attendees by eventId
+
+select at.attendee_name,
+       at.email
+from attendees at
+join event_attendee ea on at.attendee_id = ea.attendee_id
+where event_id = 1;
+
+select * from events where event_id=3;
+
+
+update events set event_name = 'noianoia',
+                  event_date='2024-11-20',
+                  venue_id=1
+where event_id=3;
+
+
+
+
+
